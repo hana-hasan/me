@@ -4,9 +4,10 @@
     <title>About Me</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #fffae8;
             line-height: 1.6;
+            color: #1b4709;
         }
         .container {
             width: 80%;
@@ -14,15 +15,31 @@
             overflow: hidden;
         }
         .main-info {
-            background: #333;
-            color: #fff;
+            margin-top: 20px; 
+            color: black;
             padding: 20px;
+            text-align: center;
+            font-family:  Georgia, 'Times New Roman', Times, serif;
+            
         }
         .main-info h1 {
-            margin: 0;
+            font-size: 40px;
+            color: #1b4709;
         }
-        .hobbies, .lewis, .course, .job {
-            background: #e7e7e7;
+        .photo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%; 
+            margin-bottom: 50px;
+        }
+        .photo img 
+        {
+            border: 5px solid #1b4709;
+            
+        }
+        .hobbies, .lewis, .course, .job, .fun-fact {
+            border: 5px solid #1b4709;
             padding: 15px;
             margin-bottom: 10px;
         }
@@ -30,36 +47,40 @@
 </head>
 <body>
     <div class="container">
-        <header class="main-info">
+        <section class="main-info">
             <h1>Hana Hasan</h1>
-            <h1>Preferred Name: Hana</h1>
-        </header>
+        </section>
+
+        <!-- Move the photo class here -->
+        <section class="photo">
+            <img src="picture.jpeg" alt="A picture of me" class="photo" >
+        </section>
 
         <section class="lewis">
-			<h2>Year at Lewis: Senior</h2>
-			<h2>Lewis major/minor/concentrations: Computer Science</h2>
-			<h2>Reasons for pursuing this degree: I enjoy coding! I like the creative and problem solving aspects of coding. (Job security is also nice.)</h2>
+            <h2>Year at Lewis: Senior</h2>
+            <h2>Major: Computer Science</h2>
+            <h2>Reasons for pursuing this degree: I enjoy coding! I like the creative and problem solving aspects of coding. </h2>
+            <h2>(Job security is also nice.)</h2>
         </section>
 
-		<section class="course">
+        <section class="course">
             <h2>Reasons for Taking This Course</h2>
-            <p>I am excited to work as a team, because in the real world, people work in teams.</p>
+            <h2>I am excited to work as a team, because in the real world, people work in teams.</h2>
         </section>
 
-		<section class="job">
-            <p>Current/Recent Job</p>
-			<p>[Your job responsibilities]</p>
-        </section>		
+        <section class="job">
+            <h2>Current/Recent Job</h2>
+            <h2>I worked at JLL as a Business Intelligence intern, working with SQL, Python, and Tableau, to
+                assist with creating dashboards.</h2>
+            <h2>Part-time during the semester, I work as Lush.</h2>
+        </section>      
 
         <section class="hobbies">
             <h2>Hobbies and Special Interests</h2>
-            <p>I enjoy reading, watching movies, and trying new foods with my friends! I'm trying to get into baking.</p>
+            <h2>I enjoy reading, watching movies, and trying new foods with my friends! I'm trying to get into baking.</h2>
+            <h2>Fun Fact: This is the third college I have attended.</h2>
         </section>
 
-        <section class="fun-fact">
-            <h2>Fun Fact</h2>
-            <p>[A fun fact about yourself]</p>
-        </section>
     </div>
 </body>
 </html>
